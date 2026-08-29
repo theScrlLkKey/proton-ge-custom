@@ -258,6 +258,9 @@ apply_all_in_dir() {
     echo "WINE: -GAME FIXES- make MapleStory launch: accept SPI_SETSTICKYKEYS/SPI_SETFILTERKEYS"
     apply_patch "../patches/game-patches/maplestory-spi-stickykeys-filterkeys.patch"
 
+    echo "WINE: -GAME FIXES- Starwing Paradox: fake SetWindowFeedbackSetting"
+    apply_patch "../patches/starwing/set-window-feedback-setting.patch"
+
 ### END GAME PATCH SECTION ###
 
 ### (2-5) WINE HOTFIX/BACKPORT SECTION ###
